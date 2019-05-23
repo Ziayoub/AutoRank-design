@@ -10574,8 +10574,16 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
+.class-1 {
+  background: white;
+}
+
+.class-1 .subclass1 {
+  background: black;
+}
+
+.class-1 .subclass2 {
+  background: black;
 }
 
 #wrapper {
@@ -10645,6 +10653,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .space-200 {
   margin: 200px 0px;
+}
+
+.space-100 {
+  margin: 100px 0px;
 }
 
 .navbar-nav .form-inline .input-group {
