@@ -20,232 +20,233 @@
 </head>
 
 <body>
-  <div class="container">
+
+  <div class="container-fluid p-0" style="margin-top: 73px"></div>
 
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">AutoRank</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-          data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto d-flex align-items-center">
-            <li class="nav-item">
-              <a class="nav-link" href="cars.html">Voitures</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="agencies.html">Agences</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">À Propos</a>
-            </li>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white fixed-top p-3 border-bottom">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/img/brand/black.png" height="30" alt="">
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="cars.html">Voitures</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="agencies.html">Agences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">À Propos</a>
+          </li>
 
-            <li class="nav-item ml-4">
-              <a class="nav-link" href="login.html">
-                <i class="fas fa-user"></i>&nbsp;&nbsp; Se Connecter
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="register.html">
-                <i class="fas fa-user"></i>&nbsp;&nbsp;Créer un compte
-              </a>
-            </li>
+          <li class="nav-item ml-4">
+            <a class="nav-link" href="login.html">
+              <i class="fas fa-user"></i>&nbsp;&nbsp; Se Connecter
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">
+              <i class="fas fa-user"></i>&nbsp;&nbsp;Créer un compte
+            </a>
+          </li>
 
 
-            <!-- <li class="nav-item dropdown ml-4">
-                    <a class="nav-link" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <img class="rounded-circle" style="width:30px;height:30px"
-                        src="https://argon-dashboard-laravel.creative-tim.com/argon/img/theme/team-4-800x800.jpg">
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                      <a class="dropdown-item" href="portfolio-1-col.html">Profile</a>
-                      <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-                      <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-                      <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-                      <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
-                    </div>
-                  </li> -->
+          <!-- <li class="nav-item dropdown ml-4">
+                  <a class="nav-link" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="rounded-circle" style="width:30px;height:30px"
+                      src="https://argon-dashboard-laravel.creative-tim.com/argon/img/theme/team-4-800x800.jpg">
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                    <a class="dropdown-item" href="portfolio-1-col.html">Profile</a>
+                    <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
+                    <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
+                    <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
+                    <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+                  </div>
+                </li> -->
 
-          </ul>
-        </div>
+        </ul>
       </div>
     </nav>
 
-
-    <div class="row">
-
-      <div class="col-lg-3">
-
-				<h1 class="my-4">Voitures</h1>
-
-				<p class="text-secondary">Par Agence</p>
-        <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Agence 1
-            <span class="badge badge-primary badge-pill">14</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Agence 2
-            <span class="badge badge-primary badge-pill">2</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Agence 3
-            <span class="badge badge-primary badge-pill">1</span>
-          </li>
-        </ul>
-
-      </div>
-      <!-- /.col-lg-3 -->
-
-      <div class="col-lg-9">
-
-        <div class="row mt-4">
-
-          <div class="col-lg-4 col-md-6 mb-4">
-						<div class="card">
-							<a href="car.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-							<div class="card-body">
-								<h3 class="card-title">Voiture 1</h3>
-								<div class="card-text">
-									<h5 class="text-info">200 DH / jour</h5>
-									<div class="mb-2">
-										<div><i class="fas fa-car text-secondary"></i> 5 Places</div>
-										<div><i class="fas fa-gas-pump text-secondary"></i> Diesel</div>
-										<div><i class="fas fa-cog text-secondary"></i> Vitesse automatique</div>
-									</div>
-								</div>
-							</div>
-							<div class="card-footer">
-								<a href="car.html" class="small pull-right">Plus d'information</a>
-							</div>
-						</div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-						<div class="card">
-							<a href="car.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-							<div class="card-body">
-								<h3 class="card-title">Voiture 1</h3>
-								<div class="card-text">
-									<h5 class="text-info">200 DH / jour</h5>
-									<div class="mb-2">
-										<div><i class="fas fa-car text-secondary"></i> 5 Places</div>
-										<div><i class="fas fa-gas-pump text-secondary"></i> Diesel</div>
-										<div><i class="fas fa-cog text-secondary"></i> Vitesse automatique</div>
-									</div>
-								</div>
-							</div>
-							<div class="card-footer">
-								<a href="car.html" class="small pull-right">Plus d'information</a>
-							</div>
-						</div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-						<div class="card">
-							<a href="car.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-							<div class="card-body">
-								<h3 class="card-title">Voiture 1</h3>
-								<div class="card-text">
-									<h5 class="text-info">200 DH / jour</h5>
-									<div class="mb-2">
-										<div><i class="fas fa-car text-secondary"></i> 5 Places</div>
-										<div><i class="fas fa-gas-pump text-secondary"></i> Diesel</div>
-										<div><i class="fas fa-cog text-secondary"></i> Vitesse automatique</div>
-									</div>
-								</div>
-							</div>
-							<div class="card-footer">
-								<a href="car.html" class="small pull-right">Plus d'information</a>
-							</div>
-						</div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-						<div class="card">
-							<a href="car.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-							<div class="card-body">
-								<h3 class="card-title">Voiture 1</h3>
-								<div class="card-text">
-									<h5 class="text-info">200 DH / jour</h5>
-									<div class="mb-2">
-										<div><i class="fas fa-car text-secondary"></i> 5 Places</div>
-										<div><i class="fas fa-gas-pump text-secondary"></i> Diesel</div>
-										<div><i class="fas fa-cog text-secondary"></i> Vitesse automatique</div>
-									</div>
-								</div>
-							</div>
-							<div class="card-footer">
-								<a href="car.html" class="small pull-right">Plus d'information</a>
-							</div>
-						</div>
-          </div>
-
-					<div class="col-lg-4 col-md-6 mb-4">
-						<div class="card">
-							<a href="car.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-							<div class="card-body">
-								<h3 class="card-title">Voiture 1</h3>
-								<div class="card-text">
-									<h5 class="text-info">200 DH / jour</h5>
-									<div class="mb-2">
-										<div><i class="fas fa-car text-secondary"></i> 5 Places</div>
-										<div><i class="fas fa-gas-pump text-secondary"></i> Diesel</div>
-										<div><i class="fas fa-cog text-secondary"></i> Vitesse automatique</div>
-									</div>
-								</div>
-							</div>
-							<div class="card-footer">
-								<a href="car.html" class="small pull-right">Plus d'information</a>
-							</div>
-						</div>
-          </div>
-        </div>
-				<!-- /.row -->
-
-				<ul class="mt-5 pagination justify-content-center">
-					<li class="page-item">
-						<a class="page-link" href="#" aria-label="Previous">
-							<span aria-hidden="true">«</span>
-							<span class="sr-only">Previous</span>
-						</a>
-					</li>
-					<li class="page-item">
-						<a class="page-link" href="#">1</a>
-					</li>
-					<li class="page-item">
-						<a class="page-link" href="#">2</a>
-					</li>
-					<li class="page-item">
-						<a class="page-link" href="#">3</a>
-					</li>
-					<li class="page-item">
-						<a class="page-link" href="#" aria-label="Next">
-							<span aria-hidden="true">»</span>
-							<span class="sr-only">Next</span>
-						</a>
-					</li>
-				</ul>
-
-      </div>
-      <!-- /.col-lg-9 -->
-
-    </div>
-    <!-- /.row -->
-
-  </div>
-  <!-- /.container -->
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      <div class="row">
+
+        <div class="col-lg-3">
+
+          <h1 class="my-4">Voitures</h1>
+
+          <p class="text-secondary">Par Agence</p>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Agence 1
+              <span class="badge badge-primary badge-pill">14</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Agence 2
+              <span class="badge badge-primary badge-pill">2</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Agence 3
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+          </ul>
+
+        </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+
+          <div class="row mt-4">
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <a href="car.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <div class="card-body">
+                  <h3 class="card-title">Voiture 1</h3>
+                  <div class="card-text">
+                    <h5 class="text-info">200 DH / jour</h5>
+                    <div class="mb-2">
+                      <div><i class="fas fa-car text-secondary"></i> 5 Places</div>
+                      <div><i class="fas fa-gas-pump text-secondary"></i> Diesel</div>
+                      <div><i class="fas fa-cog text-secondary"></i> Vitesse automatique</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="car.html" class="small pull-right">Plus d'information</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <a href="car.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <div class="card-body">
+                  <h3 class="card-title">Voiture 1</h3>
+                  <div class="card-text">
+                    <h5 class="text-info">200 DH / jour</h5>
+                    <div class="mb-2">
+                      <div><i class="fas fa-car text-secondary"></i> 5 Places</div>
+                      <div><i class="fas fa-gas-pump text-secondary"></i> Diesel</div>
+                      <div><i class="fas fa-cog text-secondary"></i> Vitesse automatique</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="car.html" class="small pull-right">Plus d'information</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <a href="car.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <div class="card-body">
+                  <h3 class="card-title">Voiture 1</h3>
+                  <div class="card-text">
+                    <h5 class="text-info">200 DH / jour</h5>
+                    <div class="mb-2">
+                      <div><i class="fas fa-car text-secondary"></i> 5 Places</div>
+                      <div><i class="fas fa-gas-pump text-secondary"></i> Diesel</div>
+                      <div><i class="fas fa-cog text-secondary"></i> Vitesse automatique</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="car.html" class="small pull-right">Plus d'information</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <a href="car.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <div class="card-body">
+                  <h3 class="card-title">Voiture 1</h3>
+                  <div class="card-text">
+                    <h5 class="text-info">200 DH / jour</h5>
+                    <div class="mb-2">
+                      <div><i class="fas fa-car text-secondary"></i> 5 Places</div>
+                      <div><i class="fas fa-gas-pump text-secondary"></i> Diesel</div>
+                      <div><i class="fas fa-cog text-secondary"></i> Vitesse automatique</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="car.html" class="small pull-right">Plus d'information</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <a href="car.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <div class="card-body">
+                  <h3 class="card-title">Voiture 1</h3>
+                  <div class="card-text">
+                    <h5 class="text-info">200 DH / jour</h5>
+                    <div class="mb-2">
+                      <div><i class="fas fa-car text-secondary"></i> 5 Places</div>
+                      <div><i class="fas fa-gas-pump text-secondary"></i> Diesel</div>
+                      <div><i class="fas fa-cog text-secondary"></i> Vitesse automatique</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="car.html" class="small pull-right">Plus d'information</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.row -->
+
+          <ul class="mt-5 pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">«</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">»</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+      </div>
+      <!-- /.row -->
     </div>
     <!-- /.container -->
-  </footer>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+  </div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
