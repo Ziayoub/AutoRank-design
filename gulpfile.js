@@ -69,6 +69,9 @@ function modules() {
   // Font Awesome
   var fontAwesome = gulp.src('./node_modules/@fortawesome/**/*')
     .pipe(gulp.dest('./vendor'));
+  // Fullcalendar
+  var fullCalendar = gulp.src('./node_modules/@fullcalendar/**/*')
+    .pipe(gulp.dest('./vendor/fullcalendar'));
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
     .pipe(gulp.dest('./vendor/jquery-easing'));
