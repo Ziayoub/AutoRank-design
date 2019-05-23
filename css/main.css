@@ -10947,3 +10947,27 @@ body.sidebar-toggled footer.sticky-footer {
     width: calc(100% - 90px);
   }
 }
+
+.fc-event {
+  padding: 10px !important;
+  background-color: #ff6161 !important;
+  border: 1px dashed white !important;
+}
+
+#calendar-car .fc-event.fc-draggable {
+  border-right: 4px solid black !important;
+}
+
+#calendar-car .fc-event.fc-draggable::after {
+  content: "Supprimer";
+}
+
+#external-events .fc-event {
+  width: 150px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.fc-title {
+  color: white;
+}
