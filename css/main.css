@@ -10568,7 +10568,6 @@ html {
 
 body {
   height: 100%;
-  padding-top: 56px;
   font-weight: normal;
   font-style: normal;
   font-family: 'Lato', sans-serif;
@@ -10757,14 +10756,14 @@ body {
 
 @media (min-width: 768px) {
   .sidebar {
-    width: 225px !important;
+    width: 250px !important;
   }
   .sidebar .nav-item .nav-link {
     display: block;
     width: 100%;
     text-align: left;
     padding: 1rem;
-    width: 225px;
+    width: 250px;
   }
   .sidebar .nav-item .nav-link span {
     font-size: 1rem;
@@ -10935,7 +10934,7 @@ footer.sticky-footer .copyright {
 
 @media (min-width: 768px) {
   footer.sticky-footer {
-    width: calc(100% - 225px);
+    width: calc(100% - 250px);
   }
 }
 
