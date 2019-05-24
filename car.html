@@ -13,8 +13,15 @@
   <!-- Custom styles for this template-->
   <link href="css/main.css" rel="stylesheet">
 
-<!-- Custom fonts for this template-->
-<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Fullcalendar -->
+  <link href='vendor/fullcalendar/core/main.css' rel='stylesheet' />
+  <link href='vendor/fullcalendar/list/main.css' rel='stylesheet' />
+  <script src='vendor/fullcalendar/core/main.js'></script>
+  <script src='vendor/fullcalendar/core/locales/fr.js'></script>
+  <script src='vendor/fullcalendar/daygrid/main.js'></script>
 
 </head>
 
@@ -91,8 +98,7 @@
 
       <!-- Portfolio Item Row -->
       <div class="row">
-
-        <div class="col-md-7">
+        <div class="col-md-12">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -101,13 +107,13 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="http://placehold.it/700x500" alt="First slide">
+                <img class="d-block w-100" src="http://placehold.it/1000x400" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="http://placehold.it/700x500" alt="Second slide">
+                <img class="d-block w-100" src="http://placehold.it/1000x400" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="http://placehold.it/700x500" alt="Third slide">
+                <img class="d-block w-100" src="http://placehold.it/1000x400" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -120,40 +126,61 @@
             </a>
           </div>
         </div>
+      </div>
+      <br>
+      <h4 class="mb-4 font-weight-light">Détails de la voiture</h4>
 
-        <div class="col-md-5">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="mb-4">Détails de la voiture</h3>
-              <div class="mb-3">
-                <div class="text-uppercase text-letter-spacing text-sm text-muted">Année de production</div>
-                <div class="font-weight-bold">2019</div>
-              </div>
-              <div class="mb-3">
-                <div class="text-uppercase text-letter-spacing text-sm text-muted">Nombre de places</div>
-                <div class="font-weight-bold">200</div>
-              </div>
-              <div class="mb-3">
-                <div class="text-uppercase text-letter-spacing text-sm text-muted">Kilométrage</div>
-                <div class="font-weight-bold">20 <span class="font-weight-light">Km</span></div>
-              </div>
-              <div class="mb-3">
-                <div class="text-uppercase text-letter-spacing text-sm text-muted">Carburant</div>
-                <div class="font-weight-bold">Diesel</div>
-              </div>
-              <div class="mb-3">
-                <div class="text-uppercase text-letter-spacing text-sm text-muted">Transmission</div>
-                <div class="font-weight-bold">Auto</div>
-              </div>
-            </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="mb-3">
+            <div class="text-uppercase text-letter-spacing text-sm text-muted">Année de production</div>
+            <div class="font-weight-bold">2019</div>
+          </div>
+          <div class="mb-3">
+            <div class="text-uppercase text-letter-spacing text-sm text-muted">Nombre de places</div>
+            <div class="font-weight-bold">200</div>
           </div>
         </div>
-
+        <div class="col-md-4">
+          <div class="mb-3">
+            <div class="text-uppercase text-letter-spacing text-sm text-muted">Carburant</div>
+            <div class="font-weight-bold">Diesel</div>
+          </div>
+          <div class="mb-3">
+            <div class="text-uppercase text-letter-spacing text-sm text-muted">Transmission</div>
+            <div class="font-weight-bold">Auto</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="mb-3">
+            <div class="text-uppercase text-letter-spacing text-sm text-muted">Kilométrage</div>
+            <div class="font-weight-bold">20 <span class="font-weight-light">Km</span></div>
+          </div>
+        </div>
       </div>
       <!-- /.row -->
 
       <div class="space-50"></div>
-      <h3>Disponibilité</h3>
+      <h4 class="mb-4 font-weight-light">Prix</h4>
+      <div class="card mr-4 mb-4" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold">Basique</h5>
+          <p class="card-text">
+            <div>1 jour</div>
+            <br>
+            <span class="display-4">400</span>
+            <span class="font-weight-light">Dh</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="space-50"></div>
+      <h4 class="mb-4 font-weight-light">Disponibilité</h4>
+      <div class="card">
+        <div class="card-body">
+          <div id='calendar'></div>
+        </div>
+      </div>
 
 
     </div>
@@ -172,6 +199,53 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+  <!-- Fullcalendar setup script -->
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('calendar');
+
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        plugins: ['dayGrid'],
+        defaultDate: '2019-04-12',
+        editable: true,
+        eventLimit: true, // allow "more" link when too many events
+        locale: 'fr',
+        events: [
+          {
+            title: 'Réservé',
+            backgroundColor: 'red',
+            rendering: 'background',
+            start: '2019-05-25'
+          },
+          {
+            title: 'Réservé',
+            backgroundColor: 'red',
+            rendering: 'background',
+            start: '2019-05-19',
+            end: '2019-05-30'
+          },
+          {
+            groupId: 1,
+            title: 'Réservé',
+            backgroundColor: 'red',
+            rendering: 'background',
+            start: '2019-04-09'
+          },
+          {
+            groupId: 1,
+            title: 'Réservé',
+            backgroundColor: 'red',
+            rendering: 'background',
+            start: '2019-04-16'
+          }
+        ]
+      });
+
+      calendar.render();
+    });
+
+  </script>
 </body>
 
 </html>
