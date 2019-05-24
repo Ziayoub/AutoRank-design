@@ -350,26 +350,53 @@
     <div class="container">
 
       <!-- Search -->
-      <div class="card pt-2 pb-4 px-4" style="top:-170px;">
-          <div class="card-body">
-          <h3 class="card-title mb-4">Trouver une voiture</h3>
+      <div class="card p-4" style="top:-120px;">
+        <div class="card-body">
           <form>
             <div class="form-group">
-              <input type="text" class="form-control form-control-lg" aria-label="Text input with dropdown button"
-                placeholder="Modèle ou marque...">
+              <label class="text-uppercase text-letter-spacing text-sm text-muted" for="exampleFormControlSelect1">Agence</label>
+              <select class="form-control" placeholder="Agence" id="exampleFormControlSelect1">
+                <option selected>Choisir</option>
+                <option>Agence 1 </option>
+                <option>Agence 2</option>
+                <option>Agence 3 </option>
+              </select>
             </div>
-
-            <div class="d-flex align-items-end justify-content-between">
-              <div class="row w-75">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-6">
+                  <label class="text-uppercase text-letter-spacing text-sm text-muted" for="formGroupExampleInput2">Marque</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="col-6">
+                  <label class="text-uppercase text-letter-spacing text-sm text-muted" for="formGroupExampleInput2">Model</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Model</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+              <div class="row">
                 <div class="form-group col-6 mb-0">
-                  <label for="exampleFormControlSelect1">Filter par</label>
+                  <label class="text-uppercase text-letter-spacing text-sm text-muted" for="exampleFormControlSelect1">Filter par</label>
                   <select class="form-control" id="exampleFormControlSelect1">
                     <option>Prix croissant</option>
                     <option>Prix décroissant</option>
                   </select>
                 </div>
                 <div class="form-group col-6 mb-0">
-                  <label for="exampleFormControlSelect1">Filter par ville</label>
+                  <label class="text-uppercase text-letter-spacing text-sm text-muted" for="exampleFormControlSelect1">Filter par ville</label>
                   <select class="form-control" id="exampleFormControlSelect1">
                     <option>Tanger</option>
                     <option>Tetouan</option>
@@ -377,8 +404,11 @@
                   </select>
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary btn-lg">Rechercher</button>
-            </div>
+             <div class="row mt-5">
+                <div class="col-12 text-right">
+                  <button type="submit" class="btn btn-primary btn-lg">Rechercher</button>
+                </div>
+              </div>
           </form>
         </div>
       </div>
