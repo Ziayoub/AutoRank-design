@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>AutoRank - Tableau de bord</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Page level plugin CSS-->
+  <link href="../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="../css/main.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+  <div class="container-fluid p-0 bg-light">
+    <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+      <a class="navbar-brand mr-1" href="index.html">AutoRank</a>
+
+      <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="navbar-nav ml-auto d-flex align-items-center">
+        <li class="nav-item dropdown ml-4">
+          <a class="nav-link d-flex align-items-center" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="mr-3">Ayoub Moderator</span>
+            <img class="rounded-circle" style="width:30px;height:30px"
+              src="https://argon-dashboard-laravel.creative-tim.com/argon/img/theme/team-4-800x800.jpg">
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
+            <a class="dropdown-item" href="#">
+              <i class="fas fa-user"></i>&nbsp;&nbsp;Compte
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Se Déconnecter</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul class="sidebar navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">
+            <i class="fas fa-fw fa-columns"></i>
+            <span>Tableau de bord</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="./agency.html">
+            <i class="fas fa-fw fa-hotel"></i>
+            <span>Agence</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./cars.html">
+            <i class="fas fa-fw fa-car"></i>
+            <span>Voitures</span></a>
+        </li>
+
+      </ul>
+
+      <div id="content-wrapper">
+
+        <div class="container-fluid">
+            <h4 class="my-4">Agence Salam</h4>
+
+          <div class="row">
+            <div class="col-md-12">
+              <!-- Details de l'agence -->
+              <div class="card mb-3">
+                <!-- <h5 class="card-header">
+                  <i class="fas fa-info"></i>&nbsp;&nbsp; Details de l'agence
+                </h5> -->
+                <div class="card-body">
+                  <h4 class="mb-4"><i class="fas fa-info text-icon"></i>&nbsp;&nbsp;Details de l'agence</h5>
+                  <div class="row">
+                    <div class="col-12">
+                      <form>
+                        <div class="form-group">
+                          <label for="formGroupExampleInput" class="text-uppercase text-muted text-sm text-letter-spacing">Nom</label>
+                          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nom de l'agence" value="Agence Salam">
+                        </div>
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="col-9">
+                              <label for="formGroupExampleInput2" class="text-uppercase text-muted text-sm text-letter-spacing">Adresse</label>
+                              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input" value="Rue 12 Avenue Moulay Ismail 90000 Tanger">
+                            </div>
+                            <div class="col-3">
+                              <label for="formGroupExampleInput2" class="text-uppercase text-muted text-sm text-letter-spacing">Ville</label>
+                              <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Tanger</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="formGroupExampleInput2" class="text-uppercase text-muted text-sm text-letter-spacing">Telephone de contact</label>
+                          <input type="phone" class="form-control" id="formGroupExampleInput2" placeholder="Another input" value="066321321321">
+                        </div>
+
+                        <div class="space-60"></div>
+                        <h4 class="mb-4"><i class="fas fa-photo text-icon"></i>&nbsp;&nbsp;Photos de l'agence</h5>
+                        <div class="form-group">
+                          <div class="input-group">
+                            <div class="file">
+                              <input type="file" class="custom-file-input" id="inputGroupFile04">
+                              <label class="custom-file-label" for="inputGroupFile04"><i class="fas fa-cloud-upload-alt"></i>&nbsp;&nbsp;Ajouter
+                                des photos</label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <p class="text-secondary">5 photos listées</p>
+                        <div class="d-flex flex-wrap">
+                          <div class="d-flex flex-column align-items-center mr-2 mb-2 img-thumbnail">
+                            <img src="http://placehold.it/600x400" alt="..." class="img img-fluid" style="height: 150px;object-fit: cover">
+                            <button type="button" class="btn btn-link btn-sm text-danger mt-1">
+                              <i class="fas fa-trash"></i>&nbsp;&nbsp; Supprimer
+                            </button>
+                          </div>
+                          <div class="d-flex flex-column align-items-center mr-2 mb-2 img-thumbnail">
+                            <img src="http://placehold.it/600x400" alt="..." class="img img-fluid" style="height: 150px;object-fit: cover">
+                            <button type="button" class="btn btn-link btn-sm text-danger mt-1">
+                              <i class="fas fa-trash"></i>&nbsp;&nbsp; Supprimer
+                            </button>
+                          </div>
+                          <div class="d-flex flex-column align-items-center mr-2 mb-2 img-thumbnail">
+                            <img src="http://placehold.it/600x400" alt="..." class="img img-fluid" style="height: 150px;object-fit: cover">
+                            <button type="button" class="btn btn-link btn-sm text-danger mt-1">
+                              <i class="fas fa-trash"></i>&nbsp;&nbsp; Supprimer
+                            </button>
+                          </div>
+                          <div class="d-flex flex-column align-items-center mr-2 mb-2 img-thumbnail">
+                            <img src="http://placehold.it/600x400" alt="..." class="img img-fluid" style="height: 150px;object-fit: cover">
+                            <button type="button" class="btn btn-link btn-sm text-danger mt-1">
+                              <i class="fas fa-trash"></i>&nbsp;&nbsp; Supprimer
+                            </button>
+                          </div>
+                          <div class="d-flex flex-column align-items-center mr-2 mb-2 img-thumbnail">
+                            <img src="http://placehold.it/600x400" alt="..." class="img img-fluid" style="height: 150px;object-fit: cover">
+                            <button type="button" class="btn btn-link btn-sm text-danger mt-1">
+                              <i class="fas fa-trash"></i>&nbsp;&nbsp; Supprimer
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col-12">
+                      <button type="button" class="pull-right btn btn-primary">Enregistrer</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ./ Details de l'agence -->
+            </div>
+          </div>
+
+          <!-- DataTables Example -->
+          <div class="card mb-3">
+            <div class="card-body">
+              <h4 class="mb-5"><i class="fas fa-car text-muted"></i>&nbsp;&nbsp;Voitures</h5>
+              <a href="car.html" class="mb-4 btn btn-primary">Ajouter une voiture</a>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Photo</th>
+                      <th>Marque</th>
+                      <th>Modèle</th>
+                      <th>Année de production</th>
+                      <th>Prix par jour</th>
+                      <th>Kilométrage</th>
+                      <th>Nombre de places</th>
+                      <th>Carburant</th>
+                      <th>Boite de vitesse</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>
+                        <img src="http://placehold.it/400x400" alt="" style="height:50px;">
+                      </th>
+                      <th>Ford</th>
+                      <th>Fiesta</th>
+                      <th>2018</th>
+                      <th>200</th>
+                      <th>200000</th>
+                      <th>5</th>
+                      <th>Diesel</th>
+                      <th>Manuelle</th>
+                      <th style="min-width: 160px">
+                        <div>
+                          <a href="./car.html" class="btn btn-sm btn-secondary">Modifier</a>
+                          <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <img src="http://placehold.it/400x400" alt="" style="height:50px;">
+                      </th>
+                      <th>Ford</th>
+                      <th>Fiesta</th>
+                      <th>2018</th>
+                      <th>200</th>
+                      <th>200000</th>
+                      <th>5</th>
+                      <th>Diesel</th>
+                      <th>Manuelle</th>
+                      <th style="min-width: 160px">
+                        <div>
+                          <a href="./car.html" class="btn btn-sm btn-secondary">Modifier</a>
+                          <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <img src="http://placehold.it/400x400" alt="" style="height:50px;">
+                      </th>
+                      <th>Ford</th>
+                      <th>Fiesta</th>
+                      <th>2018</th>
+                      <th>200</th>
+                      <th>200000</th>
+                      <th>5</th>
+                      <th>Diesel</th>
+                      <th>Manuelle</th>
+                      <th style="min-width: 160px">
+                        <div>
+                          <a href="./car.html" class="btn btn-sm btn-secondary">Modifier</a>
+                          <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <img src="http://placehold.it/400x400" alt="" style="height:50px;">
+                      </th>
+                      <th>Ford</th>
+                      <th>Fiesta</th>
+                      <th>2018</th>
+                      <th>200</th>
+                      <th>200000</th>
+                      <th>5</th>
+                      <th>Diesel</th>
+                      <th>Manuelle</th>
+                      <th style="min-width: 160px">
+                        <div>
+                          <a href="./car.html" class="btn btn-sm btn-secondary">Modifier</a>
+                          <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <img src="http://placehold.it/400x400" alt="" style="height:50px;">
+                      </th>
+                      <th>Ford</th>
+                      <th>Fiesta</th>
+                      <th>2018</th>
+                      <th>200</th>
+                      <th>200000</th>
+                      <th>5</th>
+                      <th>Diesel</th>
+                      <th>Manuelle</th>
+                      <th style="min-width: 160px">
+                        <div>
+                          <a href="./car.html" class="btn btn-sm btn-secondary">Modifier</a>
+                          <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                        </div>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+        <!-- Sticky Footer -->
+        <footer class="sticky-footer">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright © Your Website 2019</span>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+      <!-- /.content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Page level plugin JavaScript-->
+  <script src="../vendor/chart.js/Chart.min.js"></script>
+  <script src="../vendor/datatables/jquery.dataTables.js"></script>
+  <script src="../vendor/datatables/dataTables.bootstrap4.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="../js/sb-admin.min.js"></script>
+
+  <!-- Demo scripts for this page-->
+
+</body>
+
+</html>

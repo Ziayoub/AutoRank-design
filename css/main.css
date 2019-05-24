@@ -10602,7 +10602,6 @@ nav {
 #wrapper #content-wrapper {
   overflow-x: hidden;
   width: 100%;
-  padding-top: 1rem;
   padding-bottom: 80px;
 }
 
@@ -10649,6 +10648,10 @@ nav {
   left: 100px;
 }
 
+.text-icon {
+  color: #bec5cc;
+}
+
 .smaller {
   font-size: 0.7rem;
 }
@@ -10671,6 +10674,34 @@ nav {
 
 .space-100 {
   margin: 100px 0px;
+}
+
+.space-50 {
+  margin: 50px 0px;
+}
+
+.space-60 {
+  margin: 60px 0px;
+}
+
+.space-70 {
+  margin: 70px 0px;
+}
+
+.space-80 {
+  margin: 80px 0px;
+}
+
+.space-90 {
+  margin: 90px 0px;
+}
+
+.text-sm {
+  font-size: 12px;
+}
+
+.text-letter-spacing {
+  letter-spacing: 1px;
 }
 
 .navbar-nav .form-inline .input-group {
@@ -10720,7 +10751,7 @@ nav {
 
 .sidebar {
   width: 90px !important;
-  background-color: #212529;
+  background-color: #242939;
   min-height: calc(100vh - 56px);
 }
 
@@ -10939,7 +10970,6 @@ footer.sticky-footer {
   bottom: 0;
   width: calc(100% - 90px);
   height: 80px;
-  background-color: #e9ecef;
 }
 
 footer.sticky-footer .copyright {

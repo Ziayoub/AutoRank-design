@@ -37,7 +37,6 @@ nav {
   #content-wrapper {
     overflow-x: hidden;
     width: 100%;
-    padding-top: 1rem;
     padding-bottom: $sticky-footer-height;
   }
 }
@@ -87,3 +86,11 @@ nav {
   height: 10px;
   left: 100px;
 }
+
+.text-icon {
+  color: #bec5cc;
+}
+
+// i.fa {
+//   font-size: 80%;
+// }
