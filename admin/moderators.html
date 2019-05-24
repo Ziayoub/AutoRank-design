@@ -98,67 +98,60 @@
     <div id="content-wrapper">
 
       <div class="container-fluid mt-3">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Voitures</a></li>
-          </ol>
-        </nav>
 
-        <!-- Cars DataTables -->
-        <div class="card mb-3">
-          <div class="card-body">
-            <h4 class="mb-5"><i class="fas fa-car text-icon"></i>&nbsp;&nbsp;Voitures</h5>
-              <a href="car.html" class="mb-4 btn btn-primary">Ajouter une voiture</a>
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>ID</th>
-                      <th>Photo</th>
-                      <th>Marque</th>
-                      <th>Modèle</th>
-                      <th>Année de production</th>
-                      <th>Prix par jour</th>
-                      <th>Kilométrage</th>
-                      <th>Nombre de places</th>
-                      <th>Carburant</th>
-                      <th>Boite de vitesse</th>
-                      <th>Agence</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">
-                        <a href="./car.html">1</a>
-                      </th>
-                      <td>
-                        <img src="http://placehold.it/400x400" alt="" style="height:50px;">
-                      </td>
-                      <td>Ford</td>
-                      <td>Fiesta</td>
-                      <td>2018</td>
-                      <td>200</td>
-                      <td>200000</td>
-                      <td>5</td>
-                      <td>Diesel</td>
-                      <td>Manuelle</td>
-                      <td>
-                        <a href="./agency.html">Agence Al Boughaz</a>
-                      </td>
-                      <td style="min-width: 170px">
-                        <div>
-                          <a href="./car.html" class="btn btn-sm btn-secondary">Modifier</a>
-                          <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-          </div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active"><a href="./moderators.html">Modérateurs</a></li>
+        </ol>
+      </nav>
+
+      <!-- Moderators DataTables -->
+      <div class="card mb-3">
+        <div class="card-body">
+          <h4 class="mb-5"><i class="fas fa-users text-icon"></i>&nbsp;&nbsp;Modérateurs</h5>
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Photo</th>
+                    <th>Prénom</th>
+                    <th>Nom</th>
+                    <th>Email</th>
+                    <th>Telephone</th>
+                    <th>Validé</th>
+                    <th>Agence</th>
+                    <th>Date d'inscriptions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      <a href="./moderator.html">10</a>
+                    </th>
+                    <td>
+                      <img src="http://placehold.it/400x400" alt="" class="rounded-circle" style="height:50px;">
+                    </td>
+                    <td>Ayoub</td>
+                    <td>Moderator</td>
+                    <td>ayoub.moderator@gmail.com</td>
+                    <td>0658932032</td>
+                    <td>
+                      <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitches">
+                        <label class="custom-control-label" for="customSwitches"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="./agency.html">Agence Al Boughaz</a>
+                    </td>
+                    <td>22-05-2019</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
         </div>
-
+      </div>
       </div>
       <!-- /.container-fluid -->
 

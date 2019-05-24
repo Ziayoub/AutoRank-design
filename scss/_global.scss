@@ -87,6 +87,19 @@ nav {
   left: 100px;
 }
 
+.art-join-us {
+  position: absolute;
+  height: 10px;
+  left: 0px;
+
+  svg {
+    position: absolute;
+    height: 500px;
+    left: -300px;
+    top: -100px;
+  }
+}
+
 .text-icon {
   color: #bec5cc;
 }

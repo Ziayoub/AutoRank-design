@@ -39,13 +39,6 @@
         // remove outline for Safari and Firefox
         outline: none;
       }
-      .badge {
-        position: absolute;
-        margin-left: 0.75rem;
-        top: 0.3rem;
-        font-weight: 400;
-        font-size: 0.5rem;
-      }
     }
   }
 
@@ -61,7 +54,7 @@
 
 .sidebar {
   width: $sidebar-collapsed-width !important;
-  background-color: #242939;
+  background-color: #23282e;
   min-height: calc(100vh - #{$navbar-base-height});
   @include sidebar-icons;
   .nav-item {

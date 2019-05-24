@@ -10648,6 +10648,19 @@ nav {
   left: 100px;
 }
 
+.art-join-us {
+  position: absolute;
+  height: 10px;
+  left: 0px;
+}
+
+.art-join-us svg {
+  position: absolute;
+  height: 500px;
+  left: -300px;
+  top: -100px;
+}
+
 .text-icon {
   color: #bec5cc;
 }
@@ -10735,14 +10748,6 @@ nav {
   outline: none;
 }
 
-.navbar-nav .nav-item .nav-link .badge {
-  position: absolute;
-  margin-left: 0.75rem;
-  top: 0.3rem;
-  font-weight: 400;
-  font-size: 0.5rem;
-}
-
 @media (min-width: 768px) {
   .navbar-nav .form-inline .input-group {
     width: auto;
@@ -10751,7 +10756,7 @@ nav {
 
 .sidebar {
   width: 90px !important;
-  background-color: #242939;
+  background-color: #23282e;
   min-height: calc(100vh - 56px);
 }
 
@@ -10983,20 +10988,9 @@ footer.sticky-footer .copyright {
   }
 }
 
-body.sidebar-toggled footer.sticky-footer {
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  body.sidebar-toggled footer.sticky-footer {
-    width: calc(100% - 90px);
-  }
-}
-
 .fc-event {
   padding: 10px !important;
-  background-color: #ff6161 !important;
-  border: 1px dashed white !important;
+  border: none !important;
 }
 
 #calendar-car .fc-event.fc-draggable {

@@ -55,6 +55,7 @@
   </nav>
 
   <div id="wrapper">
+
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav pl-2">
       <li class="nav-item active mt-3">
@@ -98,67 +99,64 @@
     <div id="content-wrapper">
 
       <div class="container-fluid mt-3">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Voitures</a></li>
-          </ol>
-        </nav>
 
-        <!-- Cars DataTables -->
-        <div class="card mb-3">
-          <div class="card-body">
-            <h4 class="mb-5"><i class="fas fa-car text-icon"></i>&nbsp;&nbsp;Voitures</h5>
-              <a href="car.html" class="mb-4 btn btn-primary">Ajouter une voiture</a>
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>ID</th>
-                      <th>Photo</th>
-                      <th>Marque</th>
-                      <th>Modèle</th>
-                      <th>Année de production</th>
-                      <th>Prix par jour</th>
-                      <th>Kilométrage</th>
-                      <th>Nombre de places</th>
-                      <th>Carburant</th>
-                      <th>Boite de vitesse</th>
-                      <th>Agence</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">
-                        <a href="./car.html">1</a>
-                      </th>
-                      <td>
-                        <img src="http://placehold.it/400x400" alt="" style="height:50px;">
-                      </td>
-                      <td>Ford</td>
-                      <td>Fiesta</td>
-                      <td>2018</td>
-                      <td>200</td>
-                      <td>200000</td>
-                      <td>5</td>
-                      <td>Diesel</td>
-                      <td>Manuelle</td>
-                      <td>
-                        <a href="./agency.html">Agence Al Boughaz</a>
-                      </td>
-                      <td style="min-width: 170px">
-                        <div>
-                          <a href="./car.html" class="btn btn-sm btn-secondary">Modifier</a>
-                          <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-          </div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./agencies.html">Agences</a></li>
+        </ol>
+      </nav>
+
+
+      <!-- Cars DataTables Example -->
+      <div class="card mb-3">
+        <div class="card-body">
+          <h4 class="mb-5"><i class="fas fa-building text-icon"></i>&nbsp;&nbsp;Agences</h5>
+            <a href="agency.html" class="mb-4 btn btn-primary">Ajouter une agence</a>
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Photo</th>
+                    <th>Nom</th>
+                    <th>Telephone</th>
+                    <th>Adresse</th>
+                    <th>Ville</th>
+                    <th>Date Ajoutée</th>
+                    <th>Modérateur</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      <a href="./agency.html">2</a>
+                    </th>
+                    <td>
+                      <img src="http://placehold.it/400x400" alt="" style="height:50px;">
+                    </td>
+                    <td>
+                      <a href="./agency.html">Agence Al Boughaz</a>
+                    </td>
+                    <td>0534324244</td>
+                    <td>Rue 4 Avenue Moulay Ismail 9000</td>
+                    <td>Tanger</td>
+                    <td>01-03-2019</td>
+                    <td>
+                      <a href="./moderator.html">Ayoub Modérateur</a>
+                    </td>
+                    <td style="min-width: 160px">
+                      <div>
+                        <a href="./agency.html" class="btn btn-sm btn-secondary">Modifier</a>
+                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
         </div>
-
+      </div>
       </div>
       <!-- /.container-fluid -->
 
